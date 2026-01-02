@@ -119,12 +119,12 @@ curl https://localhost:11435/api/embed \
   -H "Content-Type: application/json" \
   -d '{ "model":"nomic-embed-text", "input":"hello from caddy" }'
 ```
+<img width="900" height="435" alt="image" src="https://github.com/user-attachments/assets/592d0e90-de63-44fe-8fed-6a47b576ea23" />
+
 If this succeeds:
 - HTTPS is correctly configured
 - The certificates are trusted
 - SQL Server can securely access this endpoint
-
-<img width="900" height="435" alt="image" src="https://github.com/user-attachments/assets/592d0e90-de63-44fe-8fed-6a47b576ea23" />
 
 After configuring the Ollama embedding model on the local server, the next step is the SQL Server workflow: ingesting unstructured text, generating embeddings, storing them in native vector columns, and performing vector similarity search.
 
