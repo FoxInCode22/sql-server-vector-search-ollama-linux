@@ -1,6 +1,6 @@
 # Configuring a Local AI Model on Linux for SQL Server 2025
 
-SQL Server 2025 supports integration with external AI models for tasks such as embedding generation. 
+SQL Server 2025 supports integration with external AI models for tasks such as embedding generation.  
 There is, however, an important requirement:
 - All external model endpoints must be exposed over HTTPS.
   
