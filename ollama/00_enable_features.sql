@@ -1,0 +1,9 @@
+CREATE DATABASE ragtdb
+GO
+
+
+ALTER DATABASE SCOPED CONFIGURATION SET PREVIEW_FEATURES = ON;
+GO
+
+EXEC sp_configure 'external rest endpoint enabled', 1;
+RECONFIGURE;
