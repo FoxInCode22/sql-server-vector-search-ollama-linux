@@ -18,8 +18,9 @@ Caddy (11435, TLS internal)
    v
 Ollama (11434)
 ```
-
-
+---
+### Prerequisites: SQL Server 2025 installed and configured on Ubuntu 22.04
+---
 ### Step 1: Install and Configure Ollama
 
 Ollama is a lightweight runtime for running local LLMs and embedding models.
