@@ -4,7 +4,8 @@ SQL Server 2025 supports integration with external AI models for tasks such as e
 There is, however, an important requirement:
 - All external model endpoints must be exposed over HTTPS.
   
-Since most local model runtimes (like Ollama) expose HTTP-only endpoints by default, we need an HTTPS reverse proxy in front of them. This guide walks through the complete setup on Ubuntu 22.04.
+Since most local model runtimes (like Ollama) expose HTTP-only endpoints by default, we need an HTTPS reverse proxy in front of them.  
+This guide walks through the complete setup on Ubuntu 22.04.
 
 ## Architecture
 ```
@@ -150,7 +151,7 @@ Note: The following Kaggle dataset is used for the vector search demonstration i
 Dataset : https://www.kaggle.com/datasets/ashishkumarak/netflix-reviews-playstore-daily-updated/data
 
 The following shows the results of our vector search test in SQL Server 2025.
-![vector_search](https://github.com/user-attachments/assets/3052613f-18c7-4323-9af2-2eb987e26f1e)
+<img width="1339" height="527" alt="image" src="https://github.com/user-attachments/assets/513cd61f-a11a-4020-9c62-b39f61b27a71" />
 
 ## Summary
 This repository demonstrates how to integrate a locally hosted AI embedding model with SQL Server 2025 on Linux while meeting the platform’s strict HTTPS requirements for external model access. The solution uses Ollama as the local model runtime and Caddy as an HTTPS reverse proxy to securely expose the model endpoint.
